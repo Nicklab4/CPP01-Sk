@@ -22,6 +22,6 @@ int main() {
 	std::cout << "Вы проехали " << distance << " км.\n";
 
 	if(distance >= 200)
-	std::cout << "Вы приехали!";
+		std::cout << "Вы приехали!\n";
 
 }
