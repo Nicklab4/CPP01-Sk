@@ -30,7 +30,11 @@ int main() {
 
 	std::cout << "-----Проверяем----- \n";
 
-	if(number1 % number2 == 0)
+	if(number1 == 0)
+		std::cout << "При делении 0 на любое число получается - 0 \n";
+	else if(number2 == 0)
+		std::cout << "На ноль делить нельзя! \n";
+	else if(number1 % number2 == 0)
 		std::cout << "Да,  " << number1 << " делится на " << number2 <<" без остатка!\n";
 	else
 		std::cout << "Нет, " << number1 << " не делится на " << number2 <<" без остатка!\n";
