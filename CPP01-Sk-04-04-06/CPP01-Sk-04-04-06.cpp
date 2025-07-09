@@ -37,8 +37,7 @@ int main() {
 
 	if(barberCurentQuantity >= barberQuantity)
 		std::cout << "Барберов уже достаточно.\n";
-
-	if(barberCurentQuantity < barberQuantity)
+	else
 	{
 		barberNeeds = barberQuantity - barberCurentQuantity;
 		std::cout << "Барберов недостаточно.\nТребуется ещё " << barberNeeds << " барберов.\n";
