@@ -21,7 +21,9 @@ int main() {
 	std::cout << "¬ведите количество очков полученного опыта: ";
 	std::cin >> expPoint;
 
-	if(expPoint < 1000)
+	if(expPoint <= 0)
+		std::cout << "¬ведено неверное значение\n";
+	else if(expPoint < 1000)
 		std::cout << "¬аш уровень: 1\n";
 	else if(expPoint < 2500)
 		std::cout << "¬аш уровень: 2\n";
