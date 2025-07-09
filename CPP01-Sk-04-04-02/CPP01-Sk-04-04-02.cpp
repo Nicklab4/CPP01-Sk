@@ -23,6 +23,7 @@
 
 int main() {
 	std::system("chcp 1251");
+
 	int number1;
 	int number2;
 	int sum;
