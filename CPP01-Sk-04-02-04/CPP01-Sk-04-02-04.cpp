@@ -37,6 +37,11 @@ int main() {
 
 	barberQuantity = (manQuantity / 30) / 8;
 
+	if(barberQuantity * 8 * 30 < manQuantity)
+		barberQuantity += 1;
+
+	std::cout << barberQuantity << " барберов смонут подстричь " << barberQuantity * 8 * 30 << " мужчин.\n";
+
 	if(barberCurentQuantity >= barberQuantity)
 		std::cout << "Барберов уже достаточно.\n";
 
