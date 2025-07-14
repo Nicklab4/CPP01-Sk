@@ -21,8 +21,12 @@ int main() {
 	std::cout << "Введите день: ";
 	std::cin >> day;
 
-	if((day >= 1 && day <= 5) || (day >= 8 && day <= 10) || (day % 7 == 6 || day % 7 == 0))
-		std::cout << "Выходной день.\n";
+	if(day >= 1 && day <= 31){
+		if((day >= 1 && day <= 5) || (day >= 8 && day <= 10) || (day % 7 == 6 || day % 7 == 0))
+			std::cout << "Выходной день.\n";
+		else
+			std::cout << "Рабочий день.\n";
+	}
 	else
-		std::cout << "Рабочий день.\n";
+		std::cout << "Число не соответсвует дню месяца.\n";
 }
