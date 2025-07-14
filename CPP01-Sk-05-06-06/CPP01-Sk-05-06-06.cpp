@@ -29,7 +29,11 @@ int main() {
 	std::cout << "Введите дату рождения покупателя - год, месяц, день: ";
 	std::cin >> year >> month >> day;
 
-	if((yearNow >= year + 18) && monthNow >= month && dayNow > day)
+	if(yearNow > year +18)
+		std::cout << "Можно продавать алкоголь.\n";
+	else if((yearNow == year + 18) && monthNow > month)
+		std::cout << "Можно продавать алкоголь.\n";
+	else if((yearNow == year + 18) && monthNow == month && dayNow > day)
 		std::cout << "Можно продавать алкоголь.\n";
 	else
 		std::cout << "Нельзя продавать алкоголь.\n";
