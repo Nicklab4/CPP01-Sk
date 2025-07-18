@@ -40,7 +40,7 @@ int main() {
 	std::cin >> goal;
 
 	while(deposit <= goal){
-		deposit += (deposit * rate / 100);
+		deposit += deposit * rate / 100;
 		++count;
 
 		std::cout << deposit << "\n";
