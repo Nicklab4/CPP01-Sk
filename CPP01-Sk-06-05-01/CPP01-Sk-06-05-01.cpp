@@ -24,18 +24,16 @@ int main() {
 	std::cout << "Введите, который час:\n";
 	std ::cin >> hour;
 
-	if(hour >= 0 && hour <= 24){
+	if(hour >= 0 && hour <= 23){
 		if (hour > 12)
 			hour -= 12;
 
-		while(hour > 0){
-			std::cout << "Ку-ку!\n";
-			--hour;
-		}
+		if (hour == 0)
+			hour = 12;
 	}
 	else
 		if(hour < 0)
 			std::cout << "Количество часов не может быть отрицательным.\n";
 		else
-			std::cout << "Количество часов превышает 24.\n";
+			std::cout << "Количество часов превышает 23.\n";
 }
