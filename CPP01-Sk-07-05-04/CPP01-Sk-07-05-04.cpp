@@ -32,13 +32,13 @@ int main() {
 	std::cin >> width >> height;
 	std::cout << "\n";
 
-	for(int i = 1; i <= height; i++){
-		for(int j = 1; j <= width; j++){
+	for(int row = 1; row <= height; row++){
+		for(int col = 1; col <= width; col++){
 
-			if((j == 1 ) || (j == width ))
+			if((col == 1 ) || (col == width ))
 				std::cout << "|";
 
-			else if((j > 1 || j < width ) && (i == 1 || i == height ))
+			else if((col > 1 || col < width ) && (row == 1 || row == height ))
 				std::cout << "-";
 
 			else
