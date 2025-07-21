@@ -20,25 +20,25 @@ int main() {
 	for(int row = 0 ; row < 20; row++){
 		for(int col = 0; col < 50 ; col++)
 
-			if(row==10 && col ==25){
-					std::cout << "+";
+			if(row == 10 && col == 25){
+				std::cout << "+";
 			}
-			else if(row==10){
-				if(row==10 && col ==50-1)
+			else if(row == 10){
+				if(row == 10 && col == 50-1)
 					std::cout << ">";
 				else
-				std::cout << "-";
+					std::cout << "-";
 			}
-			else if (col==25){
-				if(col==25 && row == 0) 
+			else if (col == 25){
+				if(col == 25 && row == 0) 
 					std::cout << "^";
 				else
-				std::cout << "|";
+					std::cout << "|";
 			}
 
 			else
 				std::cout << " ";
 
-		std::cout << "\n";
+			std::cout << "\n";
 	}
 }
