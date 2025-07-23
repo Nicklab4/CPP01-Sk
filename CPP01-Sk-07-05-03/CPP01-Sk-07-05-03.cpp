@@ -55,27 +55,23 @@ int main() {
 			std::cout << "[Оператор]: ";
 			std::cin >> str;
 			if(str == "w"){
-				x++;
-				if(x > height)
-					x = height;
+				if(x < height)
+					x++;
 				break;
 			}
 			if(str == "s"){
-				x--;
-				if(x < 0)
-					x = 0;
+				if(x > 0)
+					x--;
 				break;
 			}
 			if(str == "a"){
-				y--;
-				if(y < 0)
-					y = 0;
+				if(y > 0)
+					y--;
 				break;
 			}
 			if(str == "d"){
-				y++;
-				if(y > width)
-					y = width;
+				if(y < width)
+					y++;
 				break;
 			}
 			else
