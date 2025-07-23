@@ -56,8 +56,9 @@ int main() {
 	std::cout << "Введите количество молока в мл: ";
 	std::cin >> milk;
 
-	while(true){
+	while((water > 300) || (water > 30 && milk > 270)){
 		std::cout << "Выберите напиток (1 — американо, 2 — латте): ";
+
 		while(true){
 			std::cin >> choise;
 			if(choise >= 1 && choise <= 2)
@@ -87,9 +88,6 @@ int main() {
 				if (milk < 270)
 					std::cout << "Не хватает молока\n";
 			}
-
-		if (water < 30 && milk < 270)
-			break;
 	}
 
 	std::cout << "\n***Отчёт*** \n";
