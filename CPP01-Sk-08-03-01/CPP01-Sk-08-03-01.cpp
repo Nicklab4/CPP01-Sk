@@ -16,8 +16,19 @@ int main() {
 	gravi = 2200.f;
 	kc = 0.5f;
 
+
+
+
 	std::cout << "Введите количество чатлов которые у вас есть: ";
-	std:: cin >> chatl;
+
+	while(true){
+		std:: cin >> chatl;
+		if(chatl > 0)
+			break;
+		else
+			std::cout << "Количество чатлов должно быть больше 0.\nВведите количество чатлов: ";
+	}
+
 
 	std::cout << "На ваши чатлы можно купить: \n";
 	std::cout << "\t" << chatl / gravi << " гравицапу\n";
