@@ -19,10 +19,11 @@
 
 #include <tchar.h>
 #include <iostream>
+#include <math.h>
 
 int main() {
 	std::system("chcp 1251");
-	float xStart, yStart, xEnd, yEnd;
+	float x, y, xStart, yStart, xEnd, yEnd;
 
 	std::cout << "Ввод:\n";
 	std::cout << "Введите местоположение коня: \n";
@@ -77,15 +78,10 @@ int main() {
 	std::cout << "Конь в клетке (" << xStart << ", " << yStart <<
 			"). Точка в клетке (" << xEnd << ", " << yEnd << ").\n";
 
+	x = std::fabs(xEnd - xStart);
+	y = std::fabs(yEnd - yStart);
 
-	if( (xEnd == xStart + 2 && yEnd == yStart - 1) ||
-		(xEnd == xStart + 2 && yEnd == yStart + 1) ||
-		(xEnd == xStart - 2 && yEnd == yStart - 1) ||
-		(xEnd == xStart - 2 && yEnd == yStart + 1) ||
-		(xEnd == xStart - 1 && yEnd == yStart + 2) ||
-		(xEnd == xStart + 1 && yEnd == yStart + 2) ||
-		(xEnd == xStart - 1 && yEnd == yStart - 2) ||
-		(xEnd == xStart + 1 && yEnd == yStart - 2))
+	if((x == 2 && y == 1) || (x == 1 && y == 2))
 		std::cout << "Да, конь может ходить в эту точку.\n";
 	else
 		std::cout << "Нет, конь неможет ходить в эту точку.\n";
