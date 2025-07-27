@@ -47,7 +47,7 @@ int main() {
 	while(true){
 		std::cin >> right;
 
-		if(left <= left || left > 255)
+		if(right <= left || right > 255)
 			std::cout << "Значение должно быть от левой границы до 255\n";
 		else
 			break;
