@@ -41,7 +41,10 @@ int main(){
 	std::cout << "Введите строку:\n";
 	std::getline(std::cin, str);
 
-	if(str.length() != 0){
+	if(str.length() > 100)
+		std::cout << "Ошибка! Строка содержит больше 100 символов.\n";
+
+	else if(str.length() > 0){
 
 		if(str[0] != ' ')
 			count++;
@@ -50,8 +53,11 @@ int main(){
 			if (str[i] == ' ' && str[i+1] != ' ')
 				count++;
 		}
-	}
 
 		std::cout << "Ответ: " << count << "\n";
+	}
+
+	else
+		std::cout << "Ошибка! Строка содержит 0 символов.\n";
 
 }
