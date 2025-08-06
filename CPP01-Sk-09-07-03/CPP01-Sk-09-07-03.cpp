@@ -44,7 +44,10 @@ int main(){
 	if(str.length() > 100)
 		std::cout << "Ошибка! Строка содержит больше 100 символов.\n";
 
-	else if(str.length() > 0){
+	else if(str.length() == 0)
+		std::cout << "Ошибка! Строка содержит 0 символов.\n";
+
+	else {
 
 		if(str[0] != ' ')
 			count++;
@@ -56,8 +59,4 @@ int main(){
 
 		std::cout << "Ответ: " << count << "\n";
 	}
-
-	else
-		std::cout << "Ошибка! Строка содержит 0 символов.\n";
-
 }
