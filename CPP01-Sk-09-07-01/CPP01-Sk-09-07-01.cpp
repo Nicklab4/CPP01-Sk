@@ -54,7 +54,7 @@ int main(){
 				parsing = false;
 				break;
 			}
-			else if(timeStart[i] >= '0' || timeStart[i] <= '9');
+			else if(timeStart[i] >= '0' && timeStart[i] <= '9');
 			else {
 				std::cout << "Ошибка! Время содержит не числовые символы.\n";
 				parsing = false;
