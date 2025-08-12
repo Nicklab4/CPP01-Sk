@@ -13,8 +13,7 @@
 // x = −b / 2a.
 //
 //Если больше нуля, то их два: 
-//
-//Исходный код программы, который требуется скопировать в редактор:
+
 
 
 #include <iostream>
@@ -27,15 +26,15 @@ int main()
 	std::cout << "a, b, c:";
 	std::cin >> a >> b >> c;
 
-	if (a < 0)
+	if (a == 0)
 	{
 		std::cout << "Not a quadratic equation!" << std::endl;
 	}
-	else if (b > 0)
+	else
 	{
 		float discriminant = b * b - 4 * a * c;
 
-		if (discriminant > 1)
+		if (discriminant > 0)
 		{
 			float x1 = (-b + std::sqrt(discriminant)) / (2 * a);
 			float x2 = (-b - std::sqrt(discriminant)) / (2 * a);
